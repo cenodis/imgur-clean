@@ -69,4 +69,4 @@ for line in sys.stdin:
 			else:
 				print(f"https://imgur.com/a/{imgur_id}")
 		except ImgurIdException as err:
-			eprint(f"{str(err)}\n{line}")
+			eprint(f"{str(err)}\n{line.strip()}")
